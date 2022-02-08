@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll"
+            style="@style/Text"
+            android:background="@color/grey_blue"
+            android:fillViewport="false">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llContainer">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/inPut"
+            style="@style/Text"
+            android:text="0"
+            android:inputType="phone">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onClear"
+                android:text="C"
+                android:textColor="@color/red"/>
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="("
+                android:textColor="@color/green" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text=")"
+                android:textColor="@color/green" />
+
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="backSpace"
+                android:textColor="@color/green"
+                app:icon="@android:drawable/ic_input_delete" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="7" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="8" />
+
+            <Button
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="9" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="*"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="4" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="5" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="6" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="-"
+                android:textColor="@color/green" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="1" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="2" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="3" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="+"
+                android:textColor="@color/green" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="." />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="0" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="onNumberClick"
+                android:text="/" />
+
+            <Button
+
+                style="@style/MyButtonStyle"
+                android:onClick="equalBtn"
+                android:text="=" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
